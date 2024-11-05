@@ -497,6 +497,7 @@ header .search-bar-container label:hover {
     object-fit: cover;
     margin-bottom: 1rem;
 }
+
 .review .box h3 {
     color: #333;
     font-size: 2.5rem;
@@ -615,3 +616,175 @@ header .search-bar-container label:hover {
     color: var(--orange);
 }
 
+
+/* media queries */
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px) {
+    header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-bar {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading span {
+        font-size: 2.5rem;
+    }
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
+}
+
+
+/*modified */
+
+
+/* Styling for the home section form */
+
+.home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black;
+    padding-top: 50px;
+    /* Added padding on top */
+}
+
+.form-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2);
+    /* Transparent background */
+    padding: 30px 40px;
+    /* Increased padding inside the form */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: #333;
+    width: 500px;
+    /* Increased width */
+    backdrop-filter: blur(10px);
+    /* Adding blur effect */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+    font-size: 24px;
+    /* Increased font size */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+    font-size: 16px;
+    /* Increased font size */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="tel"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    /* Increased padding for better clarity */
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    /* Increased font size */
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="date"]:focus {
+    border: 1px solid #3498db;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    /* Increased padding */
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    color: #555;
+}
