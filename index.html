@@ -81,6 +81,88 @@
 
     <!-- header section ends    -->
 
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+
+
+        <div class="video-container">
+            <video src="Images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+        <div class="form-container" style="margin-top: 200px; margin-bottom: 200px;">
+            <h2>Book Your Trip</h2>
+            <form action="book.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Ex: Mr. Jaun Elia" name="name" required pattern="[A-Za-z\s]+">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Ex: xyz@mail.com" name="email" required style="text-transform: lowercase;">
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" id="p_number" name="p_number" pattern="[+0-9]{11,14}" placeholder="Ex: +8801XXXXXXXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" id="gender" name="gender" value="Male" required> Male      <input type="radio" id="gender" name="gender" value="Female" required> Female</label>
+                        <!-- <label><input type="radio" id="gender" name="gender" value="Other" required> Other</label> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number">Age:</label>
+                        <input type="number" id="age" placeholder="Ex: 24" name="age" required min="18" max="100">
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination" name="destination" required>
+                    </div> -->
+
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <select id="destination" name="destination" type="number" required placeholder="Ex: 24" style="width: 100%; height: 50px; border-radius: 5px;">
+        <option value="Mumbai">Mumbai</option>
+        <option value="hawai">Hawai</option>
+        <option value="sydney">Sydney</option>
+        <option value="saintmartin">Saint Martin</option>
+        <option value="bandarban">Bandarban</option>
+        <option value="sylhet">Sylhet</option>
+    </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="date">Travel Date:</label>
+                        <input type="date" id="date" placeholder="Ex: 20-October-2024" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">NID Number:</label>
+                        <input type="text" id="nid" placeholder="Ex: 510XXXXXXX" name="nid" pattern="[0-9]{10}" required>
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content: center; align-items: center;">
+                        <label class="checkbox">
+                          <input type="checkbox" id="check" name="agree" required> I agree with the policy
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">Book Now</button>
+                    </div>
+            </form>
+            </div>
+
+    </section>
+
+    <!-- home section ends -->
 
 
      <!-- footer section starts -->
