@@ -90,3 +90,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+<header>
+
+<div id="menu-bar" class="fas fa-bars"></div>
+
+<a href="http://localhost/Tour and Travel/index.html" class="logo"><span>N & N </span>Travel</a>
+
+<nav class="navbar">
+<a href="./travel.html">home</a>
+    <a href="http://localhost/Tour and Travel/index.html">book</a>
+    <a href="./travel.html">packages</a>
+    <a href="./travel.html">services</a>
+    <a href="./travel.html">gallery</a>
+    <a href="./travel.html">review</a>
+    <a href="./travel.html">contact</a>
+</nav>
+
+<div class="icons">
+    <i class="" id="search-btn"></i>
+    <i class="" id="login-btn"></i>
+</div>
+
+<form action="" class="search-bar-container">
+    <input type="search" id="search-bar" placeholder="search here...">
+    <label for="search-bar" class="fas fa-search"></label>
+</form>
+
+</header>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <?php if (isset($error_message)): ?>
+            <p class="error"><?php echo $error_message; ?></p>
+        <?php endif; ?>
+        <form method="POST" action="admin_login.php">
+            <label for="username"><h1>Username:</h1></label>
+            <input type="text" id="username" name="username" required>
+            <label for="password"><h1>Password:</h1></label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
