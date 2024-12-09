@@ -1,6 +1,6 @@
 <!-- DO NOT COPY -->
 
-<h1 align="center" style="color: blue;">N & N Travel<img src="https://media.giphy.com/media/hpXZ7ENJKiCKVhULE/giphy.gif" width="50" height="60" ></h1>
+<h1 align="center" style="color: blue;">N & N Travel<img src="https://giphy.com/gifs/Bthetravelbrand-summer-beach-5hpXZ7ENJKiCKVhULE/giphy.gif" width="50" height="60" ></h1>
 
 N & N Tour & Travels is a responsive travel and tourism website that allows users to explore various tour packages, book travel options, and manage travel-related inquiries. The platform offers features for both customers and admins. Customers can browse and book tours, view galleries, and access detailed travel information. Admins can manage bookings, add/edit tour packages, and monitor system performance. 🗺️✈️
 
